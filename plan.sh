@@ -8,6 +8,7 @@ pkg_shasum=abdf0e1856292468e2c9971420d73b805e93888e006c76324ae39416edcf0627
 pkg_bin_dirs=(bin)
 pkg_build_deps=(core/cacerts)
 pkg_expose=(8300 8301 8302 8500 8600)
+pkg_svc_run="bin/consul agent -server -bootstrap -bind=0.0.0.0 -client=127.0.0.1 -data-dir=`mktemp -d`"
 
 do_build() {
   return 0

@@ -1,3 +1,0 @@
-#!/bin/sh
-#
-ln -sf {{pkg.path}}/bin/consul {{pkg.svc_path}}
