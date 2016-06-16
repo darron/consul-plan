@@ -9,6 +9,7 @@ pkg_bin_dirs=(bin)
 pkg_build_deps=(core/cacerts)
 pkg_expose=(8300 8301 8302 8500 8600)
 pkg_svc_run="bin/consul agent -server -bootstrap -bind=0.0.0.0 -client=127.0.0.1 -data-dir=`mktemp -d`"
+pkg_upstream_url=https://github.com/darron/consul-plan
 
 do_build() {
   return 0
